@@ -1,0 +1,5 @@
+---
+- hosts: slaves
+  tasks:
+    - name: Esegui un comando su tutte le macchine slave
+      command: echo "Hello from {{ inventory_hostname }}"

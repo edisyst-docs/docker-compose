@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  master:
+    build: ./master
+    networks:
+      - mynet
+  slave1:
+    build: ./slave
+    networks:
+      - mynet
+  slave2:
+    build: ./slave
+    networks:
+      - mynet
+
+networks:
+  mynet:
+    driver: bridge
