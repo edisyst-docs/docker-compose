@@ -14,6 +14,7 @@ Devo anche settarli: mapping porte e cartelle. In questo caso metto tutto nel `d
 ```bash
 cd apache-mysql/
 docker-compose up
+docker-compose up --scale nomeServizio=3 # posso creare 3 istanze del servizio, tipo Docker Swarm
 ```
 
 # Esercizio - composefile - WS e DB
