@@ -1,28 +1,17 @@
-Perfetto! Il file docker-compose.yml ti crea due container:
-
-postgres_db: PostgreSQL 15 con DB ecommerce
-
-pgadmin: interfaccia web accessibile su http://localhost:8080 con:
+Il file `docker-compose.yml` crea due container:
+- postgres_db: PostgreSQL 15 con DB ecommerce
+- pgadmin: interfaccia web accessibile su http://localhost:8080 con:
 
 Email: admin@admin.com
-
 Password: admin
 
-Puoi lanciare tutto con:
+Puoi lanciare tutto con `docker compose up -d`
 
-bash
-Copia
-Modifica
-docker compose up -d
 Poi accedi a http://localhost:8080, aggiungi un nuovo server:
-
-Nome: Postgres
-
-Host: db
-
-Username: postgres
-
-Password: secret
+- Nome: Postgres
+- Host: db
+- Username: postgres
+- Password: secret
 
 
 
